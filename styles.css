@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  main{
+    width: 100%;
+    height: 900px;
+    margin-top: 50px;
+  }
+
+  
+h1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+hr{
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+header, footer{
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+}
+  .container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+
+  .input-boton{
+    height: 150px;
+    background-color: #272343;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 310px;
+  }
+
+  .input-boton input, .input-boton button{
+    width: 300px;
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .input-boton button{
+    margin-top: 10px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #babfc3;
+    padding: 11px 24px;
+   
+    color: #202223;
+    background: #ffffff;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px;
+  }
+.input-boton button:hover {
+    background: #f6f6f7;
+    outline: 1px solid transparent;
+}
+
+.input-boton input{
+    font-size: 15px;
+    padding: 5px;
+    
+    border: 3px solid #000;
+    border-radius: 5px;
+    line-height: normal;
+    color: #282828;
+    display: block;
+    box-sizing: border-box;
+    user-select: auto;
+    padding: 0 6px;
+    padding-left: 12px;
+}
+
+.input-boton input:focus{
+    border: 3px solid #5551ff;
+}
+
+
+
+  .tareas{
+    
+    max-width: 50%;
+    min-height: 500px;
+  }
+
+  .tarea{
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    background-color: bisque;
+  }
+
+.tarea-id{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: #272343;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    left: -50px;
+}
+
+  .botones{
+    
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .tarea-info{
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .botones i:hover{
+    color: #a9a5c6;
+    cursor: pointer;
+  }
+
+  .pendientes{
+    width: 100%;
+    padding: 10px;
+    background-color: #bae8e8;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+
+  .completed{
+    background-color: rgb(118, 187, 118);
+}
+
+
+.editar-tarea{
+  display: none;
+}
+
+.editar-tarea.active{
+  display: flex;
+  width: 400px;
+}
+
+.desc-tarea{
+  margin-right: 15px;
+}
+.desc-tarea.active{
+  display: none;
+}
+
+@media (max-width: 800px){
+  .tarea{
+    flex-direction: column;
+    min-width: 250px;
+  }
+  .tarea .tarea-id{
+    top: 0;
+  }
+  .tarea .tarea-info{
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: none;
+  }
+}
+
